@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="insertMember">
+		INSERT INTO MEMBER2 VALUES(SEQ_MEM_NO.NEXTVAL, ?, ?,
+		?, ?, ?, ?)
+	</entry>
+	<entry key="selectList">
+		SELECT *
+		FROM MEMBER2
+		ORDER BY NEMA
+	</entry>
+	<entry key="updateMember">
+		"UPDATE MEMBER2 "
+		+ "SET PASSWORD = ?,"
+		+ "NAME = ?,"
+		+
+		"EMAIL = ?,"
+		+"WHERE ID = ?"
+	</entry>
+	<entry key="deleteMember">
+		DELETE FROM
+		MEMBER2
+		WHERE USERID
+	</entry>
+	<entry key="selectSearchld">
+		SELECT *
+		FROM MEMBER2
+		WHERE ID = ?
+	</entry>
+</properties>
